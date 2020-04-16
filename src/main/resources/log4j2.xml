@@ -10,10 +10,10 @@
         <File name="FileAppender" fileName="application-${date:yyyyMMdd}.log">
             <PatternLayout pattern="${Pattern}"/>
         </File>
-        <Socket name="Logstash" host="192.168.99.101" port="12345">
+        <Socket name="Logstash" host="{VM_IP}" port="12345">
             <PatternLayout pattern="${Pattern}"/>
         </Socket>
-        <Socket name="Graylog" host="192.168.99.102" port="5555">
+        <Socket name="Graylog" host="{VM_IP}" port="5555">
             <PatternLayout pattern="${Pattern}"/>
         </Socket>
     </Appenders>
